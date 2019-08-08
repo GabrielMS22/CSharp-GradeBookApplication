@@ -51,7 +51,7 @@ namespace GradeBook.GradeBooks
             else
             {
                 top20Plus += top20;
-                if(position <= top20)
+                if(position <= top20Plus)
                 {
                     return 'B';
                 }
@@ -68,11 +68,11 @@ namespace GradeBook.GradeBooks
                         top20Plus += top20;
                         if (position <= top20Plus)
                         {
-                            return 'F';
+                            return 'D';
                         }
                         else
                         {
-                            return 'D';
+                            return 'F';
                         }
                      
                         
