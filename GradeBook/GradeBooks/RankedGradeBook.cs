@@ -43,29 +43,30 @@ namespace GradeBook.GradeBooks
             }
 
             var top20 = (int)Math.Ceiling((0.2 * studentSize));
+            var top20Plus = top20;
             if(position <= top20)
             {
                 return 'A';
             }
             else
             {
-                top20 += top20;
+                top20Plus += top20;
                 if(position <= top20)
                 {
                     return 'B';
                 }
                 else
                 {
-                    top20 += top20;
-                    if (position <= top20)
+                    top20Plus += top20;
+                    if (position <= top20Plus)
                     {
                         return 'C';
                     }
                     else
                     {
-                        
-                        top20 += top20;
-                        if (position <= top20)
+
+                        top20Plus += top20;
+                        if (position <= top20Plus)
                         {
                             return 'F';
                         }
@@ -78,7 +79,7 @@ namespace GradeBook.GradeBooks
                     }
                 }
             }
-            return 'F';
+            //return 'F';
             
         }
     }
