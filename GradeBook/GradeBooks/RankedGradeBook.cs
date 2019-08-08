@@ -14,7 +14,7 @@ namespace GradeBook.GradeBooks
 
         public override char GetLetterGrade(double averageGrade)
         {
-            List<double> GradeStudentList = new List<double>;
+            List<double> GradeStudentList = new List<double>();
             var studentSize = Students.Count;
             if (studentSize < 5)
             {
