@@ -32,7 +32,7 @@ namespace GradeBook.GradeBooks
             int position = 0;
             foreach (var grade in GradeStudentList)
             {
-                if (averageGrade < grade)
+                if (averageGrade <= grade)
                 {
                     position++;
                 }
@@ -42,7 +42,7 @@ namespace GradeBook.GradeBooks
                 }
             }
 
-            var top20 = (20 * studentSize) / 100;
+            var top20 = (int)Math.Ceiling((0.2 * studentSize));
             if(position <= top20)
             {
                 return 'A';
