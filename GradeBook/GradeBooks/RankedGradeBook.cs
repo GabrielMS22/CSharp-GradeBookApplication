@@ -67,11 +67,11 @@ namespace GradeBook.GradeBooks
                         top20 += top20;
                         if (position <= top20)
                         {
-                            return 'F';
+                            return 'D';
                         }
                         else
                         {
-                            return 'D';
+                            return 'F';
                         }
                         
                     }
