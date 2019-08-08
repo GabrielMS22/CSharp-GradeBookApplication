@@ -32,7 +32,7 @@ namespace GradeBook.GradeBooks
             int position = 0;
             foreach (var grade in GradeStudentList)
             {
-                if (averageGrade <= grade)
+                if (averageGrade < grade)
                 {
                     position++;
                 }
